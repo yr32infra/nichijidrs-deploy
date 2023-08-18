@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  nichijidrs:
+    image: ghcr.io/yanorei32/nichijid-rs:0.1.0
+    hostname: nichijidrs
+    container_name: nichijidrs__nichijidrs
+
+    restart: unless-stopped
+
+    ports:
+      - "13:13"
+
+    networks:
+      - default
+
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+
+networks:
+  default:
+    name: nichijidrs__default
