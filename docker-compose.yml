@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   nichijidrs:
-    image: ghcr.io/yanorei32/nichijid-rs:0.1.0
+    image: ghcr.io/yanorei32/nichijid-rs:0.1.1
     hostname: nichijidrs
     container_name: nichijidrs__nichijidrs
 
